@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Maaf Ya...</title>
+</head>
+
+<body>
+    <div class="background-decor">
+        <img src="bunga.png" class="flower" style="left: 10%; animation-delay: 0s; width: 40px;">
+        <img src="bunga.png" class="flower" style="left: 70%; animation-delay: 3s; width: 50px;">
+        <img src="kupu.png" class="butterfly" style="left: 30%; top: 80%; width: 60px; animation-delay: 1s;">
+        <img src="kupu.png" class="butterfly" style="left: 80%; top: 90%; width: 40px; animation-delay: 5s;">
+    </div>
+
+    <div class="container">
+        <!-- Popup page -->
+        <div id="popup" class="active">
+            <h2 id="popupText">Aku mau ngomong sesuatu...</h2>
+            <button onclick="nextPopup()">Lanjut</button>
+        </div>
+
+        <!-- Question page -->
+        <div id="questionPage">
+            <h2>Kamu mau liat ga foto kamu yang ada di album favorit ku?</h2>
+            <div>
+                <button onclick="goToGallery()">Mau</button>
+                <button id="noBtn" onclick="moveNoBtn()">Tidak</button>
+            </div>
+        </div>
+
+        <!-- Gallery page -->
+        <div id="galleryPage">
+            <audio autoplay loop>
+                <source src="lagu.mp3" type="audio/mpeg">
+            </audio>
+            <h2>Ini foto-foto favorit aku tentang kamu</h2>
+            <div class="gallery">
+                <!-- Gambar-gambar foto -->
+                <img src="foto/1.jpg" alt="Foto kamu">
+                <img src="foto/2.jpg" alt="Foto kamu">
+                <img src="foto/3.jpg" alt="Foto kamu">
+                <img src="foto/4.jpg" alt="Foto kamu">
+                <img src="foto/5.jpg" alt="Foto kamu">
+                <img src="foto/6.jpg" alt="Foto kamu">
+                <img src="foto/7.jpg" alt="Foto kamu">
+                <img src="foto/8.jpg" alt="Foto kamu">
+                <img src="foto/9.jpg" alt="Foto kamu">
+                <img src="foto/10.jpg" alt="Foto kamu">
+                <img src="foto/11.jpg" alt="Foto kamu">
+                <img src="foto/12.jpg" alt="Foto kamu">
+                <img src="foto/13.jpg" alt="Foto kamu">
+                <img src="foto/14.jpg" alt="Foto kamu">
+                <img src="foto/15.jpg" alt="Foto kamu">
+                <img src="foto/16.jpg" alt="Foto kamu">
+                <img src="foto/17.jpg" alt="Foto kamu">
+                <img src="foto/18.jpg" alt="Foto kamu">
+                <img src="foto/19.jpg" alt="Foto kamu">
+                <img src="foto/20.jpg" alt="Foto kamu">
+                <img src="foto/21.jpg" alt="Foto kamu">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menyertakan file JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

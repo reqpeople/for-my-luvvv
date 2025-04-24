@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(to bottom right, #ffd6e7, #ffe6f0);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+#popup,
+#questionPage,
+#galleryPage {
+    display: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#popup.active,
+#questionPage.active,
+#galleryPage.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff99cc;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff66a3;
+}
+
+#noBtn {
+    position: absolute;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    animation: autoScroll 60s linear infinite;
+    /* Auto-scroll lebih lambat */
+}
+
+.gallery img {
+    max-height: 300px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes autoScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Geser seluruh galeri */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background animasi kupu-kupu & bunga */
+.background-decor {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.flower,
+.butterfly {
+    position: absolute;
+    animation: floatUp 20s linear infinite;
+    opacity: 0.6;
+}
+
+.butterfly {
+    animation: floatFly 15s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(0.5);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+@keyframes floatFly {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(50px, -200px) rotate(30deg);
+    }
+
+    100% {
+        transform: translate(-20px, -400px) rotate(-15deg);
+    }
+}
