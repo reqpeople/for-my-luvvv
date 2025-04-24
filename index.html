@@ -35,8 +35,10 @@
 
         <!-- Gallery page -->
         <div id="galleryPage">
-            <audio autoplay loop>
+            <!-- Audio with autoplay and muted -->
+            <audio id="audio" autoplay muted loop>
                 <source src="lagu.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
             </audio>
             <h2>Ini Foto lu yang ada di<br> galeri gua, sebenernya <br> masih banyak sih hehe</h2>
             <div class="gallery">
@@ -57,17 +59,26 @@
                 <img src="foto/14.jpg" alt="Foto kamu">
                 <img src="foto/15.jpg" alt="Foto kamu">
                 <img src="foto/16.jpg" alt="Foto kamu">
+                <img src="foto/17.jpg" alt="Foto kamu">
                 <img src="foto/18.jpg" alt="Foto kamu">
                 <img src="foto/19.jpg" alt="Foto kamu">
                 <img src="foto/20.jpg" alt="Foto kamu">
                 <img src="foto/21.jpg" alt="Foto kamu">
-                <img src="foto/17.jpg" alt="Foto kamu">
             </div>
         </div>
     </div>
 
     <!-- Menyertakan file JavaScript -->
     <script src="script.js"></script>
+
+    <script>
+        // Fungsi untuk memulai audio setelah interaksi pengguna (untuk perangkat mobile)
+        document.addEventListener("click", function () {
+            var audio = document.getElementById('audio');
+            audio.muted = false; // Matikan mute untuk memulai suara setelah klik
+            audio.play();        // Memulai audio
+        });
+    </script>
 </body>
 
 </html>
