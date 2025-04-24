@@ -1,13 +1,13 @@
+
 const messages = [
-    "Hai kamu~",
-    "Aku tau hari ini kamu capek banget, apalagi harus lembur 😔",
-    "Tapi aku bangga sama kamu yang tetap semangat dan bertanggung jawab 💪💕",
-    "Aku cuma mau bilang...",
-    "Aku minta maaf ya...",
-    "Aku tau aku udah bikin kamu ngerasa gak nyaman akhir-akhir ini...",
-    "Tapi aku benar-benar sayang dan gak mau kehilangan kamu 😢",
-    "Makasih udah mau dengerin aku sejauh ini 🥺",
+    "Mata lu tuh kayak punya kekuatan sendiri, ya. Bisa bikin gua lupa waktu.",
+    "Gua gak tahu gimana, tapi mata lu tuh ngasih vibe yang gua banget.",
+    "Serius deh, setiap gua liat mata lu, gua merasa kayak di tempat yang paling nyaman.",
+    "Lu pernah sadar ga sih, mata lu bisa ngomong lebih banyak dari kata-kata?",
+    "Mata lu tuh simpel, tapi bisa bikin hari gua lebih baik setiap kali ngeliatnya.",
+    "POKONYA MAH LOPP YUUUU PULLL"
 ];
+
 
 let i = 0;
 

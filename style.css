@@ -1,8 +1,15 @@
 body {
     margin: 0;
-    font-family: 'Comic Sans MS', cursive;
-    background: linear-gradient(to bottom right, #ffd6e7, #ffe6f0);
-    overflow: hidden;
+        font-family: 'Comic Sans MS', cursive;
+        background-image: url('foto/background.jpeg');
+        /* Ganti dengan path gambar yang sesuai */
+        background-size: cover;
+        /* Agar gambar mengisi seluruh layar */
+        background-position: center;
+        /* Menjaga gambar agar tetap terpusat */
+        background-repeat: no-repeat;
+        /* Agar gambar tidak diulang */
+        overflow: hidden;
 }
 
 .container {
