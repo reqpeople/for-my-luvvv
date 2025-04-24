@@ -1,10 +1,10 @@
 
 const messages = [
     "Mata lu tuh kayak punya kekuatan sendiri, ya. Bisa bikin gua lupa waktu.",
-    "Gua gak tahu gimana, tapi mata lu tuh ngasih vibe yang gua banget.",
-    "Serius deh, setiap gua liat mata lu, gua merasa kayak di tempat yang paling nyaman.",
+    "Gua gak tau gimana, tapi mata lu tuh ngasih vibe yang gua banget.",
+    "Serius deh, setiap gua liat mata lu, gua kek ngerasa kayak di tempat yang paling nyaman.",
     "Lu pernah sadar ga sih, mata lu bisa ngomong lebih banyak dari kata-kata?",
-    "Mata lu tuh simpel, tapi bisa bikin hari gua lebih baik setiap kali ngeliatnya.",
+    "Mata lu tuh simpel, tapi bisa bikin hari gua lebih baik dan berwarna setiap kali ngeliatnya.",
     "POKONYA MAH LOPP YUUUU PULLL"
 ];
 
