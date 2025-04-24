@@ -71,6 +71,7 @@ button:hover {
     max-width: 100%;
     box-sizing: border-box;
     animation: autoScroll 60s linear infinite;
+    background-position: center;
     /* Auto-scroll lebih lambat */
 }
 
